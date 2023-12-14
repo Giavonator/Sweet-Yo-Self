@@ -1,191 +1,277 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-<title>Los Juegos</title>
+	<head>
+		<title>Sweet Yo' Self</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
 
-<div class="container">
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 ><a href="index.html"><img id="logo" src="images/logo.jpg"></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Welcome</a></li>
+							<li class="current"><a href="about-us.html">About Us</a></li>
+							<li class="current"><a href="contact.html">Contact</a></li>
+							<li class="submenu">
+								<a href="#">Candies</a>
+								<ul>
+									<li><a href="contact.html">Rainbow Drips</a></li>
+									<li><a href="contact.html">Color Bombs</a></li>
+									<li><a href="contact.html">Fruity Crawlers</a></li>
+									<li><a href="contact.html">Rainbow Flags</a></li>
+								</ul>
+							</li>
+							<li><a href="orders.html" class="button primary">Place Order</a></li>
+						</ul>
+					</nav>
+				</header>
 
-<div class="backBorder">
-		
-	<div id="welcomeScreen" style="position: relative;top: 15%;">
-		<h1 style="font-size: 6vw;">Welcome to</h1>
-		<h1 style="font-size: 9vw;">Los Jueguitos</h1>
-		<h1 class="beginButton" id="beginButton" onclick="StartGames()">Start</h1>
-	</div>
 
-	<div id="mainGames" style="height: 100%;display: none;overflow-y: scroll;">
+			
+			<!-- Banner -->
+				<section id="banner">
 
-		<div class="grid-container">
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
 
-  			<div id="game1" style="background: url(/Users/Giani/Documents/Coding/tictactoe.png);background-size: 100% 100%;">
-  				<p class="game">Tic-Tac-Toe</p>
-  			</div>
 
-  			<div id="game2" style="background-image: url(/Users/Giani/Documents/Coding/connectfour.png);background-size: 100% 100%;">
-  				<p class="game">Connect Four</p>
-  			</div>
+					
+					<br />
+					<br />
+					
+					<div class="inner">
 
-  			<div id="game3" style="background-image: url(/Users/Giani/Documents/Coding/maze.png);background-size: 100% 100%;" onclick="startWordle(), loadWordle()">
-  				<p class="game">Wordle</p>
-  			</div>  
+						<header>
+							<h2>Sweet Yo' Self</h2>
+						</header>
+						<p>Whenever you need a <strong>treat</strong>, or anything <strong>sweet</strong>,
+						<br />
+						please come get all you can <strong>eat<strong>!
+						<footer>
+							<ul class="buttons stacked">
+								<li><a href="#main" class="button fit scrolly">I Want Candy!</a></li>
+							</ul>
+						</footer>
 
-  			<div id="game4" style="background-image: url(/Users/Giani/Documents/Coding/rps.png);background-size: 100% 100%;">
-  				<p class="game">RPS</p>
-  			</div>
+					</div>
+					
+				
+				</section>
 
-  			<div id="game5" style="background-image: url(/Users/Giani/Documents/Coding/chopsticks.png);background-size: 100% 100%;">
-  				<p class="game">Chop Sticks</p>
-  			</div>
+			
 
-  			<div id="game6" style="background-image: url(/Users/Giani/Documents/Coding/tbd.png);background-size: 100% 100%;">
-  				<p class="game">TBD</p>
-  			</div>
+			<!-- Main -->
+				<article id="main">
 
-  			<div id="game7" style="background-image: url(/Users/Giani/Documents/Coding/tbd.png);background-size: 100% 100%;">
-  				<p class="game">TBD</p>
-  			</div>
-  			<div id="game8" style="background-image: url(/Users/Giani/Documents/Coding/tbd.png);background-size: 100% 100%;">
-  				<p class="game">TBD</p>
-  			</div>
-  			<div id="game9" style="background-image: url(/Users/Giani/Documents/Coding/tbd.png);background-size: 100% 100%;" >
-  				<p class="game">TBD</p>
-  			</div> 
+					<header class="special container">
+						<span class="icon solid fa-chart-bar"></span>
+						<h2>We all want candy, thats why we made <strong>Halloween</strong>, 
+						<br />
+						But what if you could have that candy everyday?</h2>
+						<p>Turns out <strong>You Can!</strong> Here at Sweet Yo' Self we use high tech Phoenix built machines,
+						<br />
+						that create the optimized best candy in the whole world.
+						<br />
+						Don't believe us? Just try it for yourself!
+					</header>
+
+
+
+					<!-- One
+						<section class="wrapper style2 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-8 col-12-narrower">
+
+									<header>
+										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+									</header>
+									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
+									<footer>
+										<ul class="buttons">
+											<li><a href="#" class="button">Find Out More</a></li>
+										</ul>
+									</footer>
+
+								</div>
+								<div class="col-4 col-12-narrower imp-narrower">
+
+									<ul class="featured-icons">
+										<li><span class="icon fa-clock"><span class="label">Feature 1</span></span></li>
+										<li><span class="icon solid fa-volume-up"><span class="label">Feature 2</span></span></li>
+										<li><span class="icon solid fa-laptop"><span class="label">Feature 3</span></span></li>
+										<li><span class="icon solid fa-inbox"><span class="label">Feature 4</span></span></li>
+										<li><span class="icon solid fa-lock"><span class="label">Feature 5</span></span></li>
+										<li><span class="icon solid fa-cog"><span class="label">Feature 6</span></span></li>
+									</ul>
+
+								</div>
+							</div>
+						</section>
+
+
+					-->
+
+					<!-- Three -->
+						<section class="wrapper style3 container special">
+
+							<header class="major">
+								<h2>The best candies <strong>in the world!</strong></h2>
+							</header>
+
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/candy.jpg" alt="" /></a>
+										<header>
+											<h3>Rainbow Droppings</h3>
+										</header>
+										<p>Rainbow droppings are colorful, bite-sized candies with a fruity burst in every piece. Their vibrant hues and bold flavors make them a popular and enjoyable treat for all ages.</p>
+									</section>
+
+								</div>
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/candy.jpg" alt="" /></a>
+										<header>
+											<h3>Rings of Peach</h3>
+										</header>
+										<p>They are soft, sugar-coated gummies with a distinct peach flavor. Shaped like miniature rings, they provide a deliciously chewy and fruity experience in each delightful piece.</p>
+									</section>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/candy.jpg" alt="" /></a>
+										<header>
+											<h3>Rainbow Flags</h3>
+										</header>
+										<p>Increadibly stretchy, chewy taffy-like candies bursting with bold, fruity flavors. Their vibrant colors and unique texture make them a playful and delicious treat for candy enthusiasts of all ages.</p>
+									</section>
+
+								</div>
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/candy.jpg" alt="" /></a>
+										<header>
+											<h3>Fruity Crawlers</h3>
+										</header>
+										<p>Indulge in the delectable world of Fruity Crawlers, where each luscious bite unveils a symphony of vibrant flavors, weaving together a sweet and tangy dance on your taste buds.</p>
+									</section>
+
+								</div>
+							</div>
+
+							<footer class="major">
+								<ul class="buttons">
+									<li><a href="#" class="button">See More</a></li>
+								</ul>
+							</footer>
+
+						</section>
+
+
+					<!-- Two -->
+						<section class="wrapper style1 container special">
+							<div class="row">
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon solid featured fa-image"></span>
+										<header>
+											<h3>This is Something</h3>
+										</header>
+										<p>We put something here. Candy candy candy. Hello hello. Hi Phoenix, this is Giani. Crazy coding stuff blah blah blah sugar yummy best candy in the whole wide world. OOOPAAAa Yes. Opa.</p>
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon solid featured fa-camera-retro"></span>
+										<header>
+											<h3>Also Something</h3>
+										</header>
+										<p>We put something here. Candy candy candy. Hello hello. Hi Phoenix, this is Giani. Crazy coding stuff blah blah blah sugar yummy best candy in the whole wide world. OOOPAAAa Yes. Opa.</p>
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon solid featured fa-gift"></span>
+										<header>
+											<h3>The best Something</h3>
+										</header>
+										<p>We put something here. Candy candy candy. Hello hello. Hi Phoenix, this is Giani. Crazy coding stuff blah blah blah sugar yummy best candy in the whole wide world. OOOPAAAa Yes. Opa.</p>
+									</section>
+
+								</div>
+							</div>
+						</section>
+
+
+
+				</article>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<header>
+						<h2>Want some  <strong>candy</strong>?</h2>
+						<p>Just get in my van! I promise its safe.</p>
+					</header>
+					<footer>
+						<ul class="buttons">
+							<li><a href="orders.html" class="button primary">Yes Please!</a></li>
+							<li><a href="#" class="button">Bro what</a></li>
+						</ul>
+					</footer>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a target="_blank" href="https://instagram.com" class="icon brands circle fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a target="_blank" href="https://facebook.com" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a target="_blank" href="https://google.com" class="icon brands circle fa-google"><span class="label">Google</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Sweet Yo' Self</li><li>CEO: <a href="#">Phoenix Bemiller</a></li>
+					</ul>
+
+				</footer>
+
 		</div>
 
-	</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-	<div id="wordleGame" style="display: none;">
-		<iframe src="Wordle.html" width="100%"></iframe>
-	</div>
-</div>
-
-
-</div>
+	</body>
 </html>
-
-<script type="text/javascript">
- function loadWordle(){
- document.getElementById(".secdiv").load("Wordle.html");
-};
-</script>
-
-
-<style type="text/css">
-
-h1{
-	font-family: 'Courier New', monospace;
-	margin: 0%;
-	color: #000066;
-}
-
-.container{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: #000066;
-	top: 0%;
-	left: 0%;
-}
-	
-.backBorder{
-	border: 1.5vmin solid #ffe6ff;
-	border-radius: 10%;
-	background-color: #4d4dff;
-	position: absolute;
-	text-align: center;
-	overflow-y: hidden;
-	width: 80%;
-	height: 80%;
-	left: 9%;
-	top: 3%;
-
-}
-	
-
-
-
-
-.beginButton{
-	border: 1.5vw solid #ffe6ff;
-	background-color: linear-gradient(blue, black);
-	animation: test 1s paused forwards;
-	position: absolute;
-	border-radius: 15%;
-	text-align: center;
-	font-size: 16vmin;
-	cursor: pointer;
-	user-select: none;
-	width: 60%;
-	height: 63%;
-	left: 18.5%;
-	top: 115%;
-}
- 
-
-
-
-.grid-container {
-  display: grid;
-  grid-template: 31vh 31vh 31vh / 31% 31% 31%;
-  grid-row-gap: 8%;
-  grid-column-gap: 4%;
-  text-align: center;
-  margin: 5%;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10%;
-  text-align: center;
-  font-size: 4vmin;
-}
-
-.game {
-	font-family: 'Courier New', monospace;
-	background: #000066;
-	border-radius: 10%;
-	position: relative;
-	text-align: center;
-	font-weight: bold;
-	color: #ffe6ff;
-	width: 80%;
-	left: 10%;
-}
-
-</style>
-
-<script type="text/javascript">
-
-function StartGames(){
-	document.getElementById("welcomeScreen").style.display = "none";
-	document.getElementById("mainGames").style.display = "block";
-}
-
-function startWordle(){
-	document.getElementById("mainGames").style.display = "none";
-	document.getElementById("wordleGame").style.display = "block";
-}
-
-
-
-
-
-
-window.addEventListener("keydown", checkKeyPressed);
-function checkKeyPressed() {
-    if (event.keyCode == "Enter") {
-        document.getElementById("adThree").style.display = "none";
-    }
-    if (event.keyCode == "50") {
-        document.getElementById("adThree").style.display = "block";
-    }
-    if (event.keyCode == "68") {
-        document.getElementById("beginButton").style.animationPlayState = "running";
-    }
-
-}
-</script>
-
-
-
-
-
