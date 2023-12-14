@@ -1,3 +1,17 @@
+function sendEmail(name, email, subject, message){
+	Email.send({
+    	Host : "smtp.elasticemail.com",
+    	Username : "phoenixbemiller@gmail.com",
+    	Password : "2D25CCFBC7326FA88DEBEC83C6CD2DF681D1",
+    	To : 'gioalvez33@gmail.com',
+    	From : "orders@sweetyoself.com",
+    	Subject : subject,
+    	Body : "Name: " + name + "<br/>Email: " + email + "<br/>Message: " + message
+	}).then(
+  	message => alert(message)
+);
+}
+
 (function($) {
 
 	/**
