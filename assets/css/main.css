@@ -1,11 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
-/*
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1934,6 +1929,24 @@ input, select, textarea {
 				top: -0.2em;
 			}
 
+			.icon.circle.fa-instagram {
+				background: #C13584;
+				color: #fff;
+			}
+
+				.icon.circle.fa-instagram:hover {
+					background: #FD1D1D;
+				}
+
+			.icon.circle.fa-google {
+				background: #34a853;
+				color: #fff;
+			}
+
+				.icon.circle.fa-google:hover {
+					background: #fbbc05;
+				}
+
 			.icon.circle.fa-twitter {
 				background: #70aecd;
 				color: #fff;
@@ -1944,7 +1957,7 @@ input, select, textarea {
 				}
 
 			.icon.circle.fa-facebook-f {
-				background: #7490c3;
+				background: #3b5998;
 				color: #fff;
 			}
 
@@ -2314,6 +2327,12 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
+		#logo{
+			height: 5em;
+			width: 5em;
+		}
+
+
 		#header h1 {
 			font-weight: 900;
 			margin: 0;
@@ -2351,7 +2370,7 @@ input, select, textarea {
 						color: inherit;
 						display: inline-block;
 						line-height: 1em;
-						padding: 0.6em 0.75em;
+						padding: 1.9em 0.75em;
 						text-decoration: none;
 					}
 
