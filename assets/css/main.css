@@ -1956,6 +1956,15 @@ input, select, textarea {
 					background: #7fb7d2;
 				}
 
+			.icon.circle.fa-tiktok {
+				background: #000000;
+				color: #fff;
+			}
+
+				.icon.circle.fa-twitter:hover {
+					background: #00f2ea;
+				}
+
 			.icon.circle.fa-facebook-f {
 				background: #3b5998;
 				color: #fff;
