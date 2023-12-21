@@ -1,15 +1,65 @@
+
 function sendEmail(name, email, subject, message){
+
+	intro = "We are pleased to inform you that a kind individual is eager to connect with you regarding specific information. The contact details provided below are at your convenience for a seamless interaction. This thoughtful person looks forward to engaging with you, sharing valuable insights, or discussing pertinent matters. Please take a moment to review the contact information and consider reaching out. Your prompt attention to this outreach is greatly appreciated, and we anticipate that this connection will be mutually beneficial. Thank you for fostering a collaborative and open communication environment.";
+	
+	html = "<html><body style='border: 12px solid #FF69D2;border-radius:5px;background-color:#FFE1F6;'>  <br/> <p style='margin-top:0px;text-align:center;font-size: 25px;color: green;font-weight:900;'>Dear Phoenix,</p>  <p style='margin-left:5%;margin-right:5%;text-align:center;border-bottom: 3px dashed #FF69D2;'> " + intro + "<br/><br/><br/></p> <p style='padding-left:5%;font-size: 20px;color: green;'>Name: " + name + "<br/>Email: " + email + "<br/>Message: " + message + " <br/><br/></p><img style='margin-left:5%;margin-right:5%;width:100%;' src='https://sweetyoself.com/images/rainbowdrips.jpg'/></body></html>";
+
+
+
 	Email.send({
     	Host : "smtp.elasticemail.com",
-    	Username : "phoenixbemiller@gmail.com",
+    	Username : "gioalvez33@gmail.com",
     	Password : "2D25CCFBC7326FA88DEBEC83C6CD2DF681D1",
     	To : 'gioalvez33@gmail.com',
-    	From : "orders@sweetyoself.com",
+    	From : "contact@sweetyoself.com",
     	Subject : subject,
-    	Body : "Name: " + name + "<br/>Email: " + email + "<br/>Message: " + message
+    	Body : html,
+		Attachments : [{
+			name : "candy.jpg",
+			path : "https://sweetyoself.com/images/candy.jpg"
+		}]
 	}).then(
   	message => alert(message)
 );
+}
+
+
+function sendAPI(){
+	
+	let ElasticEmail = require('@elasticemail/elasticemail-client');
+	 
+	let defaultClient = ElasticEmail.ApiClient.instance;
+	 
+	let apikey = defaultClient.authentications['sweetyoselfapi'];
+	apikey.apiKey = "3C9F48EE9621C09CF53D1FDDBCCDB74D9B7B7597279BAB24907085B80B160115E9B51688AD4791D1CCB86C1680683FB7"
+	 
+	let api = new ElasticEmail.EmailsApi()
+	 
+	let email = ElasticEmail.EmailMessageData.constructFromObject({
+	  Recipients: [
+	    new ElasticEmail.EmailRecipient("gioalvez33@gmail.com")
+	  ],
+	  Content: {
+	    Body: [
+	      ElasticEmail.BodyPart.constructFromObject({
+	        ContentType: "HTML",
+	        Content: "My test email content ;)"
+	      })
+	    ],
+	    Subject: "JS EE lib test",
+	    From: "MyEmail "
+	  }
+	});
+	 
+	var callback = function(error, data, response) {
+	  if (error) {
+	    console.error(error);
+	  } else {
+	    console.log('API called successfully.');
+	  }
+	};
+	api.emailsPost(email, callback);
 }
 
 (function($) {
