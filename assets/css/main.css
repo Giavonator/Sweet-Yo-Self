@@ -1,6 +1,24 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+a.orders img:last-child{
+	display: none;
+}
+
+a.orders:hover img:last-child{
+	display: block;
+}
+
+a.orders:hover img:first-child{
+	display: none;
+}
+
+
+
+
+
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1873,6 +1891,7 @@ input, select, textarea {
 			.image.featured img {
 				display: block;
 				width: 100%;
+
 			}
 
 /* Icon */
@@ -2692,6 +2711,12 @@ input, select, textarea {
 			}
 
 				#footer .copyright li:first-child {
+					margin: 0;
+					padding: 0;
+					border: 0;
+				}
+
+				#footer .copyright li:nth-child(5) {
 					margin: 0;
 					padding: 0;
 					border: 0;
