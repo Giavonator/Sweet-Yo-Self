@@ -1,9 +1,82 @@
 
+
+const prices = new Map();
+
+prices.set('blueRainbowDrips', [6, 0]); 
+prices.set('goldRainbowDrips', [10, 0]);
+
+prices.set('blueSmoothieDrips', [7, 0]); 
+prices.set('goldSmoothieDrips', [10, 0]);
+
+prices.set('blueBerryDrips', [8, 0]); 
+prices.set('goldBerryDrips', [11, 0]);
+
+prices.set('blueSourDrips', [6, 0]); 
+prices.set('goldSourDrips', [12, 0]);
+
+prices.set('blueColorBombs', [5, 0]); 
+prices.set('goldColorBombs', [8, 0]);
+
+prices.set('blueCaramels', [6, 0]); 
+prices.set('goldCaramels', [10, 0]);
+
+
+var subtotal = 0;
+var taxes = 0;
+var shipping = 0;
+var total = 0;
+
+
+function orderChange(candyName, candyAmount){
+	if(candyAmount > 0){
+
+
+		subtotal -= prices.get(candyName)[0] * prices.get(candyName)[1];
+		taxes -= prices.get(candyName)[0] * prices.get(candyName)[1] * 0.05;
+
+		document.getElementById(candyName).style.display = 'flex';
+		prices.set(candyName, [prices.get(candyName)[0], candyAmount]);
+
+		var price = candyAmount * prices.get(candyName)[0];
+		subtotal += price;
+		taxes += price * 0.05;
+		total = subtotal + taxes;
+
+		document.getElementById(candyName + "Subtotal").innerHTML = "$" + price.toFixed(2);
+		document.getElementById("subtotal").innerHTML = "$" + subtotal.toFixed(2);
+		document.getElementById("taxes").innerHTML = "$" + taxes.toFixed(2);
+		document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+		
+		// alert(candyName + '   ' + order.get(candyName));
+		// var candy = document.getElementById('sample').cloneNode(true);
+		// candy.id = candyName;
+		// candy.style.display = 'block';
+		// document.getElementById('items').appendChild(candy);
+	}
+
+	else{
+
+		document.getElementById(candyName).style.display = 'none';
+
+		subtotal -= prices.get(candyName)[0] * prices.get(candyName)[1];
+		taxes -= prices.get(candyName)[0] * prices.get(candyName)[1] * 0.05;
+		total = subtotal + taxes;
+
+		prices.get(candyName)[1] = 0;
+		document.getElementById("subtotal").innerHTML = "$" + subtotal.toFixed(2);
+		document.getElementById("taxes").innerHTML = "$" + taxes.toFixed(2);
+		document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+
+	}
+}
+
+
+
 function sendEmail(name, email, subject, message){
 
-	intro = "We are pleased to inform you that a kind individual is eager to connect with you regarding specific information. The contact details provided below are at your convenience for a seamless interaction. This thoughtful person looks forward to engaging with you, sharing valuable insights, or discussing pertinent matters. Please take a moment to review the contact information and consider reaching out. Your prompt attention to this outreach is greatly appreciated, and we anticipate that this connection will be mutually beneficial. Thank you for fostering a collaborative and open communication environment.";
+	intro = "Someone left a message, their information is below!";
 	
-	html = "<html><body style='border: 12px solid #FF69D2;border-radius:5px;background-color:#FFE1F6;'>  <br/> <p style='margin-top:0px;text-align:center;font-size: 25px;color: green;font-weight:900;'>Dear Phoenix,</p>  <p style='margin-left:5%;margin-right:5%;text-align:center;border-bottom: 3px dashed #FF69D2;'> " + intro + "<br/><br/><br/></p> <p style='padding-left:5%;font-size: 20px;color: green;'>Name: " + name + "<br/>Email: " + email + "<br/>Message: " + message + " <br/><br/></p><img style='margin-left:5%;margin-right:5%;width:100%;' src='https://sweetyoself.com/images/rainbowdrips.jpg'/></body></html>";
+	html = "<html><body style='border: 12px solid #FF69D2;border-radius:5px;background-color:#FFE1F6;'>  <br/> <p style='margin-top:0px;text-align:center;font-size: 25px;color: green;font-weight:900;'>Dear Phoenix,</p>  <p style='margin-left:5%;margin-right:5%;text-align:center;border-bottom: 3px dashed #FF69D2;'> " + intro + "<br/><br/><br/></p> <p style='padding-left:5%;font-size: 20px;color: green;'>Name: " + name + "<br/>Email: " + email + "<br/>Message: " + message + " <br/><br/></p><img style='margin-left:5%;margin-right:5%;width:90%;' src='https://sweetyoself.com/images/rainbowdrips.jpg'/></body></html>";
 
 
 
@@ -11,7 +84,7 @@ function sendEmail(name, email, subject, message){
     	Host : "smtp.elasticemail.com",
     	Username : "gioalvez33@gmail.com",
     	Password : "2D25CCFBC7326FA88DEBEC83C6CD2DF681D1",
-    	To : 'sweetyoselftoday@gmail.com',
+    	To : 'gioalvez33@gmail.com',
     	From : "contact@sweetyoself.com",
     	Subject : subject,
     	Body : html,
@@ -25,42 +98,35 @@ function sendEmail(name, email, subject, message){
 }
 
 
-function sendAPI(){
+function sendOrder(name, email, message, subtotal, taxes, total){
+
+	const day = new Date();
+	let orderNumber = name.substring(0,3) + day.getDate()+ (day.getMonth() + 1) + day.getYear();
+
+	intro = "Someone ordered something, their information is below!";
 	
-	let ElasticEmail = require('@elasticemail/elasticemail-client');
-	 
-	let defaultClient = ElasticEmail.ApiClient.instance;
-	 
-	let apikey = defaultClient.authentications['sweetyoselfapi'];
-	apikey.apiKey = "3C9F48EE9621C09CF53D1FDDBCCDB74D9B7B7597279BAB24907085B80B160115E9B51688AD4791D1CCB86C1680683FB7"
-	 
-	let api = new ElasticEmail.EmailsApi()
-	 
-	let email = ElasticEmail.EmailMessageData.constructFromObject({
-	  Recipients: [
-	    new ElasticEmail.EmailRecipient("gioalvez33@gmail.com")
-	  ],
-	  Content: {
-	    Body: [
-	      ElasticEmail.BodyPart.constructFromObject({
-	        ContentType: "HTML",
-	        Content: "My test email content ;)"
-	      })
-	    ],
-	    Subject: "JS EE lib test",
-	    From: "MyEmail "
-	  }
-	});
-	 
-	var callback = function(error, data, response) {
-	  if (error) {
-	    console.error(error);
-	  } else {
-	    console.log('API called successfully.');
-	  }
-	};
-	api.emailsPost(email, callback);
+	html = "<html><body style='border: 12px solid #FF69D2;border-radius:5px;background-color:#FFE1F6;'>  <br/> <p style='margin-top:0px;text-align:center;font-size: 25px;color: green;font-weight:900;'>Dear Phoenix,</p>  <p style='margin-left:5%;margin-right:5%;text-align:center;border-bottom: 3px dashed #FF69D2;'> " + intro + "<br/><br/><br/></p> <p style='padding-left:5%;font-size: 20px;color: green;'>Name: " + name + "<br/>Email: " + email + "<br/>Phone Number: " + message + "<br/>Order Number: " + orderNumber +  "<br/><br/>Subtotal: " + subtotal + "<br/>Taxes: " + taxes +  "<br/>Total: " + total + " <br/><br/></p><img style='margin-left:5%;margin-right:5%;width:90%;' src='https://sweetyoself.com/images/rainbowdrips.jpg'/></body></html>";
+
+
+	Email.send({
+    	Host : "smtp.elasticemail.com",
+    	Username : "gioalvez33@gmail.com",
+    	Password : "2D25CCFBC7326FA88DEBEC83C6CD2DF681D1",
+    	To : 'gioalvez33@gmail.com',
+    	From : "orders@sweetyoself.com",
+    	Subject : "Order #" + orderNumber,
+    	Body : html
+	}).then( message => results(message));
 }
+
+function results(message){
+
+	if(message == "OK"){
+		alert("Your order has been placed!");
+	}
+	else alert("Something has gone wrong, please try again.");
+}
+
 
 (function($) {
 
