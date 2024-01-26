@@ -39,7 +39,7 @@
 					<header style="text-align:center;" class="special container">
 						<span class="icon solid fa-mobile-alt"></span>
 						<h2>Place an <strong>Order</strong></h2>
-						<p style="position:relative;width:50%;left: 25%;">Below is every sweet we offer. Select the quantity of each gold/silver bag you would like for each sweet. Please do not close this page as your cart will be cleared for when you come back. When you are done, go to the bottom to view your order summary, and place your order when you are done.</p>
+						<p style="position:relative;width:50%;left: 25%;">Below is every sweet we offer. Select the quantity of each gold/blue bag you would like for each sweet. Please do not close this page as your cart will be cleared for when you come back. When you are done, go to the bottom to view your order summary, and place your order when you are done.</p>
 					</header>
 
 					<!-- One -->
@@ -59,14 +59,15 @@
 									</section>
 									<footer style="text-align: left; margin-bottom: 15%;">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
-											<input id="goldRainbowDrips" style="border: 1px solid black;float: right;width:60%;text-align: center;" type="number">
+											<input oninput="orderChange('goldRainbowDrips', document.getElementById('gRD').value)" id="gRD" class="orderInput" type="number">
 										</p>
-										<p style="margin: 0px 0px 3% 0px;">Silver Bags:
-											<input id="silverRainbowDrips"  style="border: 1px solid black;float: right;width: 60%;text-align: center;" type="number">
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueRainbowDrips', document.getElementById('bRD').value)" id="bRD" class="orderInput" type="number">
 										</p>
 									</footer>
 
 								</div>
+
 								<div style="text-align: center;" class="col-4 col-12-narrower">
 
 									<section style="padding: 0px 5% 0px 5%;">
@@ -80,14 +81,15 @@
 									</section>
 									<footer style="text-align: left; margin-bottom: 15%;">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
-											<input id="goldSourDrips"  style="border: 1px solid black;float: right;width:60%;text-align: center;" type="number">
+											<input oninput="orderChange('goldSourDrips', document.getElementById('gSD').value)" id="gSD" class="orderInput" type="number">
 										</p>
-										<p style="margin: 0px 0px 3% 0px;">Silver Bags:
-											<input id="silverSourDrips"  style="border: 1px solid black;float: right;width: 60%;text-align: center;" type="number">
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueSourDrips', document.getElementById('bSD').value)" id="bSD" class="orderInput" type="number">
 										</p>
 									</footer>
 
 								</div>
+
 								<div style="text-align: center;" class="col-4 col-12-narrower">
 
 									<section style="padding: 0px 5% 0px 5%;">
@@ -101,14 +103,16 @@
 									</section>
 									<footer style="text-align: left; margin-bottom: 15%;">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
-											<input id="goldBerryDrips" style="border: 1px solid black;float: right;width:60%;text-align: center;" type="number">
+											<input oninput="orderChange('goldBerryDrips', document.getElementById('gBD').value)" id="gBD" class="orderInput" type="number">
 										</p>
-										<p style="margin: 0px 0px 3% 0px;">Silver Bags:
-											<input id="silverBerryDrips" style="border: 1px solid black;float: right;width: 60%;text-align: center;" type="number">
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueBerryDrips', document.getElementById('bBD').value)" id="bBD" class="orderInput" type="number">
 										</p>
 									</footer>
 								</div>
 							</div>
+
+
 
 							<div class="row">
 								<div style="text-align: center;" class="col-4 col-12-narrower">
@@ -124,10 +128,10 @@
 									</section>
 									<footer style="text-align: left; margin-bottom: 15%;">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
-											<input id="goldSmoothieDrips" style="border: 1px solid black;float: right;width:60%;text-align: center;" type="number">
+											<input oninput="orderChange('goldSmoothieDrips', document.getElementById('gSMD').value)" id="gSMD" class="orderInput" type="number">
 										</p>
-										<p style="margin: 0px 0px 3% 0px;">Silver Bags:
-											<input id="silverSmoothieDrips" style="border: 1px solid black;float: right;width: 60%;text-align: center;" type="number">
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueSmoothieDrips', document.getElementById('bSMD').value)" id="bSMD" class="orderInput" type="number">
 										</p>
 									</footer>
 
@@ -145,10 +149,10 @@
 									</section>
 									<footer style="text-align: left; margin-bottom: 15%;">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
-											<input id="goldCaramels" style="border: 1px solid black;float: right;width:60%;text-align: center;" type="number">
+											<input oninput="orderChange('goldCaramels', document.getElementById('gC').value)" id="gC" class="orderInput" type="number">
 										</p>
-										<p style="margin: 0px 0px 3% 0px;">Silver Bags:
-											<input id="silverCaramels" style="border: 1px solid black;float: right;width: 60%;text-align: center;" type="number">
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueCaramels', document.getElementById('bC').value)" id="bC" class="orderInput" type="number">
 										</p>
 									</footer>
 
@@ -166,19 +170,100 @@
 									</section>
 									<footer style="text-align: left; margin-bottom: 15%;">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
-											<input id="goldColorBombs" style="border: 1px solid black;float: right;width:60%;text-align: center;" type="number">
+											<input oninput="orderChange('goldColorBombs', document.getElementById('gCB').value)" id="gCB" class="orderInput" type="number">
 										</p>
-										<p style="margin: 0px 0px 3% 0px;">Silver Bags:
-											<input id="silverColorBombs" style="border: 1px solid black;float: right;width: 60%;text-align: center;" type="number">
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueColorBombs', document.getElementById('bCB').value)" id="bCB" class="orderInput" type="number">
 										</p>
 									</footer>
 								</div>
 							</div>
 
+						
+
+
+
+							<div class="row">
+								<div style="text-align: center;" class="col-4 col-12-narrower">
+
+									<section style="padding: 0px 5% 0px 5%;">
+										<div class="image featured ordersTEST">
+											<img src="images/rainbowdrips.jpg" alt=""/>
+											<div class="blurLeft"><p><</p></div>
+											<div class="blurRight"><p>></p></div>
+											<img style="display:none;"  src="images/rainbowdripsArray.jpg" alt=""/>
+										</div>
+										<header>
+											<h3>Smoothie Drips</h3>
+										</header>
+									</section>
+									<footer style="text-align: left; margin-bottom: 15%;">
+										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
+											<input oninput="orderChange('goldSmoothieDrips', document.getElementById('gSMD').value)" id="gSMD" class="orderInput" type="number">
+										</p>
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueSmoothieDrips', document.getElementById('bSMD').value)" id="bSMD" class="orderInput" type="number">
+										</p>
+									</footer>
+
+								</div>
+								<div style="text-align: center;" class="col-4 col-12-narrower">
+
+									<section style="padding: 0px 5% 0px 5%;">
+										<a target="_blank" href="rainbowdrips.html" class="image featured ordersTEST">
+											<img src="images/caramels.jpg" alt=""/>
+											<div class="blurLeft"></div>
+											<div class="blurRight"></div>
+											<img src="images/colorbombs.jpg" alt=""/>
+										</a>
+										<header>
+											<h3>Caramelitos</h3>
+										</header>
+									</section>
+									<footer style="text-align: left; margin-bottom: 15%;">
+										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
+											<input oninput="orderChange('goldCaramels', document.getElementById('gC').value)" id="gC" class="orderInput" type="number">
+										</p>
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueCaramels', document.getElementById('bC').value)" id="bC" class="orderInput" type="number">
+										</p>
+									</footer>
+
+								</div>
+								<div style="text-align: center;" class="col-4 col-12-narrower">
+
+									<section style="padding: 0px 5% 0px 5%;">
+										<a target="_blank" href="rainbowdrips.html" class="image featured orders">
+											<img src="images/colorbombs.jpg" alt=""/>
+											<img src="images/candy.jpg" alt=""/>
+										</a>
+										<header>
+											<h3>Color Bombs</h3>
+										</header>
+									</section>
+									<footer style="text-align: left; margin-bottom: 15%;">
+										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
+											<input oninput="orderChange('goldColorBombs', document.getElementById('gCB').value)" id="gCB" class="orderInput" type="number">
+										</p>
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueColorBombs', document.getElementById('bCB').value)" id="bCB" class="orderInput" type="number">
+										</p>
+									</footer>
+								</div>
+							</div>
+
+
 						</section>
 
 						
-					
+						
+						<form  onsubmit="sendOrder(document.getElementById('name').value ,
+														document.getElementById('email').value ,
+														document.getElementById('phone').value ,
+														document.getElementById('subtotal').innerHTML ,
+														document.getElementById('taxes').innerHTML,
+														document.getElementById('total').innerHTML
+													);return false;">
 						<section class="wrapper style2 container special-alt">
 							<div class="row gtr-50">
 								<div class="col-8 col-12-narrower">
@@ -187,90 +272,188 @@
 										<h2><strong>Order Summary</strong></h2>
 									</header>
 
-									<p style="text-align:center;">All of your selected candies are below. Once you submit your order please use either Paypal, Venmo or Cashap to pay for your order.</p>
+									<p style="text-align:center">All of your selected candies are below. Once you submit your order please use either Paypal, Venmo or Cashap to pay for your order.</p>
 
 									<section style="color: #7c8081; border: 5px solid #7c8081;padding: 20px;" class="wrapper style4 container">
 
+
 										<div class="row gtr-50">
 											<div class="col-6 col-12-mobile">
-												<input id="name" type="text" name="name" placeholder="Name" />
+												<input id="name" type="text" name="name" placeholder="Name" required>
 											</div>
 											<div class="col-6 col-12-mobile">
-												<input id="email" type="text" name="email" placeholder="Email" />
+												<input id="email" type="email" name="email" placeholder="Email" required>
 											</div>
 											<div class="col-12">
-												<input id="subject" type="text" name="subject" placeholder="Subject" />
+												<input id="phone" type="tel" name="phone" placeholder="Phone Number (123-456-7890)" required>
 											</div>
 										</div>
 
-										<div id="items" style="border-bottom: 3px solid #7c8081;border-top: 3px solid #7c8081; margin-top: 5%;">
+										<div id="items" style="border-bottom: 3px solid #7c8081;border-top: 3px solid #7c8081; margin-top: 5%; padding: 5%;">
 
 
-										<div style="padding: 5% 0% 0% 5%;" class="row gtr-50">
-											<div class="col-8 col-12-narrower">
-												<h1 >Gold Rainbow Drips (Qty: 1)</h1>
+										<div id="goldRainbowDrips" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Gold Rainbow Drips (Qty: 1)</h1>
 											</div>
-											<div sclass="col-4 col-12-narrower">
-												<h1 id="subtotal">$10</h1>
-											</div>
-										</div>
-
-										<div style="padding: 5% 0% 0% 5%;" class="row gtr-50">
-											<div class="col-8 col-12-narrower">
-												<h1 >Gold Rainbow Drips (Qty: 1)</h1>
-											</div>
-											<div sclass="col-4 col-12-narrower">
-												<h1 id="subtotal">$10</h1>
+											<div class="col-4 col-2-narrower">
+												<h1 id="goldRainbowDripsSubtotal"></h1>
 											</div>
 										</div>
 
-										<div style="padding: 5% 0% 0% 5%;" class="row gtr-50">
-											<div class="col-8 col-12-narrower">
-												<h1 >Gold Rainbow Drips (Qty: 1)</h1>
-											</div>
-											<div sclass="col-4 col-12-narrower">
-												<h1 id="subtotal">$10</h1>
-											</div>
-										</div>
 
-										<p style="padding-top: 5%;"></p>
-
-										</div>
-
-										<div style="padding: 5% 0% 0% 5%;" class="row gtr-50">
-											<div class="col-8 col-12-narrower">
-												<h1 >Subtotal:</h1>
+										<div id="blueRainbowDrips" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Blue Rainbow Drips (Qty: 1)</h1>
 											</div>
-											<div sclass="col-4 col-12-narrower">
-												<h1 id="subtotal">$120.34</h1>
+											<div class="col-4 col-2-narrower">
+												<h1 id="blueRainbowDripsSubtotal"></h1>
 											</div>
 										</div>
 
-										<div style="padding-left: 5%;" class="row gtr-50">
-											<div class="col-8 col-12-narrower">
+
+										<div id="goldSourDrips" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Gold Sour Drips (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="goldSourDripsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										<div id="blueSourDrips" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Blue Sour Drips (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="blueSourDripsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										<div id="goldBerryDrips" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Gold Berry Drips (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="goldBerryDripsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										<div id="blueBerryDrips" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Blue Berry Drips (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="blueBerryDripsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										<div id="goldSmoothieDrips" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Gold Smoothie Drips (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="goldSmoothieDripsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										<div id="blueSmoothieDrips" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Blue Smoothie Drips (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="blueSmoothieDripsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										<div id="goldCaramels" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Gold Caramels (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="goldCaramelsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										<div id="blueCaramels" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Blue Caramels (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="blueCaramelsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										<div id="goldColorBombs" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Gold Color Bombs (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="goldColorBombsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										<div id="blueColorBombs" style="display: none;"  class="row gtr-50">
+											<div class="col-8 col-8-narrower center">
+												<h1>Blue Color Bombs (Qty: 1)</h1>
+											</div>
+											<div class="col-4 col-2-narrower">
+												<h1 id="blueColorBombsSubtotal"></h1>
+											</div>
+										</div>
+
+
+										</div>
+
+										<section style="padding:5%;" id="sales">
+
+										<div class="row gtr-50">
+											<div class="col-8 col-8-narrower">
+												<h1>Subtotal:</h1>
+											</div>
+											<div class="col-4 col-4-narrower">
+												<h1 id="subtotal">$0.00</h1>
+											</div>
+										</div>
+
+										<div class="row gtr-50">
+											<div class="col-8 col-8-narrower">
 												<h1>Taxes:</h1>
 											</div>
-											<div sclass="col-4 col-12-narrower">
-												<h1 id="taxes">$12.03</h1>
+											<div class="col-4 col-4-narrower">
+												<h1 id="taxes">$0.00</h1>
 											</div>
 										</div>
 
-										<div style="padding: 3% 0% 0% 5%" class="row gtr-50">
-											<div class="col-8 col-12-narrower">
-												<h1>Taxes:</h1>
+										<div class="row gtr-50" style="padding-top: 3%;">
+											<div class="col-8 col-8-narrower">
+												<h1>Total:</h1>
 											</div>
-											<div sclass="col-4 col-12-narrower">
-												<h1 id="taxes">$132.37</h1>
+											<div class="col-4 col-4-narrower">
+												<h1 id="total">$0.00</h1>
 											</div>
 										</div>
+
+										</section>
 
 									</section>
 									
 									<footer>
 										<ul class="buttons">
-											<li style="width: 100%;" ><a style="width: 100%;"  href="#" class="button">Place Order</a></li>
+											<input type="submit" value="Place Order" style="width: 100%;" ></input>
 										</ul>
 									</footer>
+
+
 
 								</div>
 								<div class="col-4 col-12-narrower imp-narrower">
@@ -287,6 +470,7 @@
 								</div>
 							</div>
 						</section>
+						</form>
 
 
 					
@@ -320,6 +504,7 @@
 		</div>
 
 		<!-- Scripts -->
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
