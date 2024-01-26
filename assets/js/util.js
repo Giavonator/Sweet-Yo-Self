@@ -84,7 +84,7 @@ function sendEmail(name, email, subject, message){
     	Host : "smtp.elasticemail.com",
     	Username : "gioalvez33@gmail.com",
     	Password : "2D25CCFBC7326FA88DEBEC83C6CD2DF681D1",
-    	To : 'gioalvez33@gmail.com',
+    	To : 'sweetyoselftoday@gmail.com',
     	From : "contact@sweetyoself.com",
     	Subject : subject,
     	Body : html,
@@ -112,7 +112,7 @@ function sendOrder(name, email, message, subtotal, taxes, total){
     	Host : "smtp.elasticemail.com",
     	Username : "gioalvez33@gmail.com",
     	Password : "2D25CCFBC7326FA88DEBEC83C6CD2DF681D1",
-    	To : 'gioalvez33@gmail.com',
+    	To : 'sweetyoselftoday@gmail.com',
     	From : "orders@sweetyoself.com",
     	Subject : "Order #" + orderNumber,
     	Body : html
