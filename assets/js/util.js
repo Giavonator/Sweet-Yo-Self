@@ -46,6 +46,9 @@ function orderChange(candyName, candyAmount){
 		document.getElementById("subtotal").innerHTML = "$" + subtotal.toFixed(2);
 		document.getElementById("taxes").innerHTML = "$" + taxes.toFixed(2);
 		document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+		document.getElementById("subtotal1").innerHTML = "$" + subtotal.toFixed(2);
+		document.getElementById("taxes1").innerHTML = "$" + taxes.toFixed(2);
+		document.getElementById("total1").innerHTML = "$" + total.toFixed(2);
 		
 		// alert(candyName + '   ' + order.get(candyName));
 		// var candy = document.getElementById('sample').cloneNode(true);
@@ -66,6 +69,9 @@ function orderChange(candyName, candyAmount){
 		document.getElementById("subtotal").innerHTML = "$" + subtotal.toFixed(2);
 		document.getElementById("taxes").innerHTML = "$" + taxes.toFixed(2);
 		document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+		document.getElementById("subtotal1").innerHTML = "$" + subtotal.toFixed(2);
+		document.getElementById("taxes1").innerHTML = "$" + taxes.toFixed(2);
+		document.getElementById("total1").innerHTML = "$" + total.toFixed(2);
 
 	}
 }
@@ -125,6 +131,48 @@ function results(message){
 		alert("Your order has been placed!");
 	}
 	else alert("Something has gone wrong, please try again.");
+}
+
+
+let images = [
+	[1, 0, 0, "imgRainbowDrips"],
+	[1, 0, 0, "imgSourDrips"],
+	[1, 0, 0, "imgBerryDrips"],
+	[1, 0, 0, "imgSmoothieDrips"],
+	[1, 0, 0, "imgCaramels"],
+	[1, 0, 0, "imgColorBombs"],
+	[1, 0, 0, "imgTesting1"],
+	[1, 0, 0, "imgTesting2"],
+];
+
+
+function imageCycle(num, dir){
+
+	let active = 0; num--;
+	if(images[num][0] == 1){
+		active = 0;
+		images[num][0] = 0;
+	}
+	else if(images[num][1] == 1){
+		active = 1;
+		images[num][1] = 0;
+	}
+	else{
+		active = 2;
+		images[num][2] = 0;
+	}
+
+	//console.log("Active " + active);
+	document.getElementById(images[num][3] + active).style.display = "none";
+
+	if(dir == -1 && active == 0) active = 3;
+	let next = (active + dir) % 3;
+
+	//console.log("Next " + next);
+	images[num][next] = 1;
+	document.getElementById(images[num][3] + next).style.display = "block";
+
+
 }
 
 
