@@ -36,28 +36,96 @@
 			<!-- Main -->
 				<article id="main">
 
-					<header style="text-align:center;" class="special container">
+					<header style="text-align:center;margin-bottom: 2%;" class="special container">
 						<span class="icon solid fa-mobile-alt"></span>
 						<h2>Place an <strong>Order</strong></h2>
-						<p style="position:relative;width:50%;left: 25%;">Below is every sweet we offer. Select the quantity of each gold/blue bag you would like for each sweet. Please do not close this page as your cart will be cleared for when you come back. When you are done, go to the bottom to view your order summary, and place your order when you are done.</p>
+						<p style="position:relative;width:75%;left: 12.5%;">Below is every sweet we offer. Select the quantity of each gold/blue bag you would like for each sweet. Please do not close this page as your cart will be cleared for when you come back. When you are done, go to the bottom to view your order summary, and place your order when you are done.</p>
 					</header>
 
-					<!-- One -->
-						<section class="wrapper style4 container">
+					<header style="margin-bottom:1%;" class="special"></header>
 
-							<div class="row">
-								<div style="text-align: center;" class="col-4 col-12-narrower">
+					<!-- One -->
+					<div style="margin-bottom: 5%;" class="row">
+
+						<div style="text-align: center;" class="col-5 col-0-narrower">
+						<div style="position: sticky;top: 14%;">
+
+								<section style="padding:2em;" class="aln-center wrapper container style2 col-0-narrower">
+
+											<header style="text-align: center;">
+												<h2><strong>Order Summary</strong></h2>
+											</header>
+
+											<p style="text-align:center">Your current total is displayed below. To finalize your purchase please scroll to the bottom, or click the button below.</p>
+
+											<section style="color: #7c8081; border: 5px solid #7c8081;padding: 0px;margin-bottom: 10%;" class="wrapper style4 container">
+
+												
+
+												<section style="padding:5%;" id="sales">
+
+												<div class="row gtr-50">
+													<div class="col-8 col-8-narrower">
+														<h1>Subtotal:</h1>
+													</div>
+													<div class="col-4 col-4-narrower">
+														<h1 id="subtotal1">$0.00</h1>
+													</div>
+												</div>
+
+												<div class="row gtr-50">
+													<div class="col-8 col-8-narrower">
+														<h1>Taxes:</h1>
+													</div>
+													<div class="col-4 col-4-narrower">
+														<h1 id="taxes1">$0.00</h1>
+													</div>
+												</div>
+
+												<div class="row gtr-50" style="padding-top: 3%;">
+													<div class="col-8 col-8-narrower">
+														<h1>Total:</h1>
+													</div>
+													<div class="col-4 col-4-narrower">
+														<h1 id="total1">$0.00</h1>
+													</div>
+												</div>
+
+												</section>
+
+											</section>
+											
+											<footer>
+												<ul class="buttons stacked">
+													<li><a href="#end" class="button fit scrolly">Finalize Order</a></li>
+												</ul>
+											</footer>
+
+								</section>
+							</div>
+						</div>
+
+
+						<div style="text-align: center;padding-left: 0%;" class="col-7 col-12-narrower ">
+
+							<div class="row aln-center">
+
+
+								<div style="text-align: center;" class="col-4 col-6-narrower">
 
 									<section style="padding: 0px 5% 0px 5%;">
-										<a target="_blank" href="rainbowdrips.html" class="image featured orders">
-											<img src="images/rainbowdrips.jpg" alt=""/>
-											<img src="images/rainbowdripsArray.jpg" alt=""/>
-										</a>
+										<div class="image featured ordersTEST">
+											<div class="blurLeft" onclick="imageCycle(1, -1)"><p><</p></div>
+											<div class="blurRight" onclick="imageCycle(1, 1);"><p>></p></div>
+											<img id="imgRainbowDrips0" src="images/rainbowdrips.jpg" alt=""/>
+											<img id="imgRainbowDrips1"  src="images/candy.jpg" style="display: none;" alt=""/>
+											<img id="imgRainbowDrips2" src="images/colorbombs.jpg" style="display: none;"  alt=""/>
+										</div>
 										<header>
 											<h3>Rainbow Drips</h3>
 										</header>
 									</section>
-									<footer style="text-align: left; margin-bottom: 15%;">
+									<footer class="orderKind">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
 											<input oninput="orderChange('goldRainbowDrips', document.getElementById('gRD').value)" id="gRD" class="orderInput" type="number">
 										</p>
@@ -68,18 +136,23 @@
 
 								</div>
 
-								<div style="text-align: center;" class="col-4 col-12-narrower">
+								<div class="col-1 col-0-narrower"></div>
+
+								<div style="text-align: center;" class="col-4 col-6-narrower">
 
 									<section style="padding: 0px 5% 0px 5%;">
-										<a target="_blank" href="rainbowdrips.html" class="image featured orders">
-											<img src="images/rainbowdrips.jpg" alt=""/>
-											<img src="images/rainbowdripsArray.jpg" alt=""/>
-										</a>
+										<div class="image featured ordersTEST">
+											<div class="blurLeft" onclick="imageCycle(2, -1)"><p><</p></div>
+											<div class="blurRight" onclick="imageCycle(2, 1);"><p>></p></div>
+											<img id="imgSourDrips0" src="images/rainbowdrips.jpg" alt=""/>
+											<img id="imgSourDrips1"  src="images/candy.jpg" style="display: none;" alt=""/>
+											<img id="imgSourDrips2" src="images/colorbombs.jpg" style="display: none;"  alt=""/>
+										</div>
 										<header>
 											<h3>Sour Drips</h3>
 										</header>
 									</section>
-									<footer style="text-align: left; margin-bottom: 15%;">
+									<footer class="orderKind">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
 											<input oninput="orderChange('goldSourDrips', document.getElementById('gSD').value)" id="gSD" class="orderInput" type="number">
 										</p>
@@ -87,21 +160,27 @@
 											<input oninput="orderChange('blueSourDrips', document.getElementById('bSD').value)" id="bSD" class="orderInput" type="number">
 										</p>
 									</footer>
-
 								</div>
+							</div>
 
-								<div style="text-align: center;" class="col-4 col-12-narrower">
+
+							<div class="row aln-center">
+
+								<div style="text-align: center;" class="col-4 col-6-narrower">
 
 									<section style="padding: 0px 5% 0px 5%;">
-										<a target="_blank" href="rainbowdrips.html" class="image featured orders">
-											<img src="images/rainbowdrips.jpg" alt=""/>
-											<img src="images/rainbowdripsArray.jpg" alt=""/>
-										</a>
+										<div class="image featured ordersTEST">
+											<div class="blurLeft" onclick="imageCycle(3, -1)"><p><</p></div>
+											<div class="blurRight" onclick="imageCycle(3, 1);"><p>></p></div>
+											<img id="imgBerryDrips0" src="images/rainbowdrips.jpg" alt=""/>
+											<img id="imgBerryDrips1"  src="images/candy.jpg" style="display: none;" alt=""/>
+											<img id="imgBerryDrips2" src="images/colorbombs.jpg" style="display: none;"  alt=""/>
+										</div>
 										<header>
 											<h3>Berry Drips</h3>
 										</header>
 									</section>
-									<footer style="text-align: left; margin-bottom: 15%;">
+									<footer class="orderKind">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
 											<input oninput="orderChange('goldBerryDrips', document.getElementById('gBD').value)" id="gBD" class="orderInput" type="number">
 										</p>
@@ -110,94 +189,24 @@
 										</p>
 									</footer>
 								</div>
-							</div>
 
+								<div class="col-1 col-0-narrower"></div>
 
-
-							<div class="row">
-								<div style="text-align: center;" class="col-4 col-12-narrower">
-
-									<section style="padding: 0px 5% 0px 5%;">
-										<a target="_blank" href="rainbowdrips.html" class="image featured orders">
-											<img src="images/rainbowdrips.jpg" alt=""/>
-											<img src="images/rainbowdripsArray.jpg" alt=""/>
-										</a>
-										<header>
-											<h3>Smoothie Drips</h3>
-										</header>
-									</section>
-									<footer style="text-align: left; margin-bottom: 15%;">
-										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
-											<input oninput="orderChange('goldSmoothieDrips', document.getElementById('gSMD').value)" id="gSMD" class="orderInput" type="number">
-										</p>
-										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
-											<input oninput="orderChange('blueSmoothieDrips', document.getElementById('bSMD').value)" id="bSMD" class="orderInput" type="number">
-										</p>
-									</footer>
-
-								</div>
-								<div style="text-align: center;" class="col-4 col-12-narrower">
-
-									<section style="padding: 0px 5% 0px 5%;">
-										<a target="_blank" href="rainbowdrips.html" class="image featured orders">
-											<img src="images/caramels.jpg" alt=""/>
-											<img src="images/colorbombs.jpg" alt=""/>
-										</a>
-										<header>
-											<h3>Caramelitos</h3>
-										</header>
-									</section>
-									<footer style="text-align: left; margin-bottom: 15%;">
-										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
-											<input oninput="orderChange('goldCaramels', document.getElementById('gC').value)" id="gC" class="orderInput" type="number">
-										</p>
-										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
-											<input oninput="orderChange('blueCaramels', document.getElementById('bC').value)" id="bC" class="orderInput" type="number">
-										</p>
-									</footer>
-
-								</div>
-								<div style="text-align: center;" class="col-4 col-12-narrower">
-
-									<section style="padding: 0px 5% 0px 5%;">
-										<a target="_blank" href="rainbowdrips.html" class="image featured orders">
-											<img src="images/colorbombs.jpg" alt=""/>
-											<img src="images/candy.jpg" alt=""/>
-										</a>
-										<header>
-											<h3>Color Bombs</h3>
-										</header>
-									</section>
-									<footer style="text-align: left; margin-bottom: 15%;">
-										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
-											<input oninput="orderChange('goldColorBombs', document.getElementById('gCB').value)" id="gCB" class="orderInput" type="number">
-										</p>
-										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
-											<input oninput="orderChange('blueColorBombs', document.getElementById('bCB').value)" id="bCB" class="orderInput" type="number">
-										</p>
-									</footer>
-								</div>
-							</div>
-
-						
-
-
-
-							<div class="row">
-								<div style="text-align: center;" class="col-4 col-12-narrower">
+								<div style="text-align: center;" class="col-4 col-6-narrower">
 
 									<section style="padding: 0px 5% 0px 5%;">
 										<div class="image featured ordersTEST">
-											<img src="images/rainbowdrips.jpg" alt=""/>
-											<div class="blurLeft"><p><</p></div>
-											<div class="blurRight"><p>></p></div>
-											<img style="display:none;"  src="images/rainbowdripsArray.jpg" alt=""/>
+											<div class="blurLeft" onclick="imageCycle(4, -1)"><p><</p></div>
+											<div class="blurRight" onclick="imageCycle(4, 1);"><p>></p></div>
+											<img id="imgSmoothieDrips0" src="images/rainbowdrips.jpg" alt=""/>
+											<img id="imgSmoothieDrips1"  src="images/candy.jpg" style="display: none;" alt=""/>
+											<img id="imgSmoothieDrips2" src="images/colorbombs.jpg" style="display: none;"  alt=""/>
 										</div>
 										<header>
 											<h3>Smoothie Drips</h3>
 										</header>
 									</section>
-									<footer style="text-align: left; margin-bottom: 15%;">
+									<footer class="orderKind">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
 											<input oninput="orderChange('goldSmoothieDrips', document.getElementById('gSMD').value)" id="gSMD" class="orderInput" type="number">
 										</p>
@@ -205,22 +214,26 @@
 											<input oninput="orderChange('blueSmoothieDrips', document.getElementById('bSMD').value)" id="bSMD" class="orderInput" type="number">
 										</p>
 									</footer>
-
 								</div>
-								<div style="text-align: center;" class="col-4 col-12-narrower">
+							</div>
+
+
+							<div class="row aln-center">
+								<div style="text-align: center;" class="col-4 col-6-narrower">
 
 									<section style="padding: 0px 5% 0px 5%;">
-										<a target="_blank" href="rainbowdrips.html" class="image featured ordersTEST">
-											<img src="images/caramels.jpg" alt=""/>
-											<div class="blurLeft"></div>
-											<div class="blurRight"></div>
-											<img src="images/colorbombs.jpg" alt=""/>
-										</a>
+										<div class="image featured ordersTEST">
+											<div class="blurLeft" onclick="imageCycle(5, -1)"><p><</p></div>
+											<div class="blurRight" onclick="imageCycle(5, 1);"><p>></p></div>
+											<img id="imgCaramels0" src="images/caramels.jpg" alt=""/>
+											<img id="imgCaramels1"  src="images/candy.jpg" style="display: none;" alt=""/>
+											<img id="imgCaramels2" src="images/rainbowdrips.jpg" style="display: none;"  alt=""/>
+										</div>
 										<header>
 											<h3>Caramelitos</h3>
 										</header>
 									</section>
-									<footer style="text-align: left; margin-bottom: 15%;">
+									<footer class="orderKind">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
 											<input oninput="orderChange('goldCaramels', document.getElementById('gC').value)" id="gC" class="orderInput" type="number">
 										</p>
@@ -230,18 +243,24 @@
 									</footer>
 
 								</div>
-								<div style="text-align: center;" class="col-4 col-12-narrower">
+
+								<div class="col-1 col-0-narrower"></div>
+
+								<div style="text-align: center;" class="col-4 col-6-narrower">
 
 									<section style="padding: 0px 5% 0px 5%;">
-										<a target="_blank" href="rainbowdrips.html" class="image featured orders">
-											<img src="images/colorbombs.jpg" alt=""/>
-											<img src="images/candy.jpg" alt=""/>
-										</a>
+										<div class="image featured ordersTEST">
+											<div class="blurLeft" onclick="imageCycle(6, -1)"><p><</p></div>
+											<div class="blurRight" onclick="imageCycle(6, 1);"><p>></p></div>
+											<img id="imgColorBombs0" src="images/colorbombs.jpg" alt=""/>
+											<img id="imgColorBombs1"  src="images/candy.jpg" style="display: none;" alt=""/>
+											<img id="imgColorBombs2" src="images/rainbowdrips.jpg" style="display: none;"  alt=""/>
+										</div>
 										<header>
 											<h3>Color Bombs</h3>
 										</header>
 									</section>
-									<footer style="text-align: left; margin-bottom: 15%;">
+									<footer class="orderKind">
 										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
 											<input oninput="orderChange('goldColorBombs', document.getElementById('gCB').value)" id="gCB" class="orderInput" type="number">
 										</p>
@@ -252,10 +271,78 @@
 								</div>
 							</div>
 
-
-						</section>
-
 						
+
+
+
+							<div class="row aln-center" style="margin-left: none;">
+								<div style="text-align: center;" class="col-4 col-5-narrower">
+
+									<section style="padding: 0px 5% 0px 5%;">
+										<div class="image featured ordersTEST">
+											<div class="blurLeft" onclick="imageCycle(7, -1)"><p><</p></div>
+											<div class="blurRight" onclick="imageCycle(7, 1);"><p>></p></div>
+											<img id="imgTesting10" src="images/caramels.jpg" alt=""/>
+											<img id="imgTesting11" style="display:none;" src="images/colorbombs.jpg" alt=""/>
+											<img id="imgTesting12" style="display:none;" src="images/rainbowdrips.jpg" alt=""/>
+										</div>
+										<header>
+											<h3>Testing 1</h3>
+										</header>
+									</section>
+									<footer class="orderKind">
+										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
+											<input oninput="orderChange('goldSmoothieDrips', document.getElementById('gSMD').value)" id="gSMD" class="orderInput" type="number">
+										</p>
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueSmoothieDrips', document.getElementById('bSMD').value)" id="bSMD" class="orderInput" type="number">
+										</p>
+									</footer>
+
+								</div>
+
+								<div class="col-1 col-0-narrower"></div>
+
+								<div style="text-align: center;" class="col-4 col-5-narrower">
+
+									<section style="padding: 0px 5% 0px 5%;">
+										<div class="image featured ordersTEST">
+											<div class="blurLeft" onclick="imageCycle(8, -1)"><p><</p></div>
+											<div class="blurRight" onclick="imageCycle(8, 1);"><p>></p></div>
+											<img id="imgTesting20" src="images/caramels.jpg" alt=""/>
+											<img id="imgTesting21" style="display:none;" src="images/colorbombs.jpg" alt=""/>
+											<img id="imgTesting22" style="display:none;" src="images/rainbowdrips.jpg" alt=""/>
+										</div>
+										<header>
+											<h3>Testing 2</h3>
+										</header>
+									</section>
+									<footer class="orderKind">
+										<p style="margin: 0px 0px 3% 0px;">Gold Bags:
+											<input oninput="orderChange('goldCaramels', document.getElementById('gC').value)" id="gC" class="orderInput" type="number">
+										</p>
+										<p style="margin: 0px 0px 3% 0px;">Blue Bags:
+											<input oninput="orderChange('blueCaramels', document.getElementById('bC').value)" id="bC" class="orderInput" type="number">
+										</p>
+									</footer>
+								</div>
+							</div>
+
+					</div>
+					</div>
+
+
+
+
+
+
+
+					<header style="margin-bottom:1%;" class="special"></header>
+						
+
+
+
+
 						
 						<form  onsubmit="sendOrder(document.getElementById('name').value ,
 														document.getElementById('email').value ,
@@ -264,7 +351,7 @@
 														document.getElementById('taxes').innerHTML,
 														document.getElementById('total').innerHTML
 													);return false;">
-						<section class="wrapper style2 container special-alt">
+						<section id="end" class="wrapper style2 container special-alt">
 							<div class="row gtr-50">
 								<div class="col-8 col-12-narrower">
 
@@ -470,7 +557,8 @@
 								</div>
 							</div>
 						</section>
-						</form>
+					</div>
+					</form>
 
 
 					
