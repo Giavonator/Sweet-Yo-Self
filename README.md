@@ -2,7 +2,7 @@
 <h2 align="center">
 **Web Development Project for a Startup Business:**
 $${\color{pink}Web&nbsp;Development}$$ 
-$${\color{pink}Web&ensp;Development}$$
+$${\color{pink}Web&ensp;Development&ensp;Project&ensp;for&ensp;a&ensp;Startup&ensp;Business}$$
 $${\color{pink}Development}$$ $${\color{pink}for}$$ $${\color{pink}a}$$ $${\color{pink}Startup}$$ $${\color{pink}Business}$$
 </h2>
 <p align="center">
