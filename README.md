@@ -1,6 +1,7 @@
 # Sweet Yo' Self
 <h2 align="center">
-$${\color{pink}Web \space Development&ensp;Project&ensp;for&ensp;a&ensp;Startup&ensp;Business}$$
+# Sweet Yo' Self
+$${\color{pink}Web \space Development \space Project \space for \space a \space Startup \space Business}$$
 </h2>
 <p align="center">
 <a href="https://sweetyoself.com">
@@ -12,7 +13,7 @@ $${\color{pink}Web \space Development&ensp;Project&ensp;for&ensp;a&ensp;Startup&
   <img src="https://github.com/Giavonator/Sweet-Yo-Self/assets/68939873/eda90db1-a1a0-4376-8127-a6e40fd587ce" width="400" height="250">
 </a>
 
-$${\color{lightpink}Sweet&ensp;Treats&ensp;and&ensp;All&ensp;You&ensp;Can&ensp;Eat!}$$
+$${\color{lightpink}Sweet \space Treats \space and \space All \space You \space Can \space Eat!}$$
 
 </p>
   
