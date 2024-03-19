@@ -1,8 +1,8 @@
 # Sweet-Yo'-Self
-<h3 align="center">
+<h2 align="center">
 ### **Web Development Project for a Startup Business:**
-$${\color{red}Web Development Project for a Startup Business:}$$
-</h3>
+$${\color{red}Web}$$ $${\color{red}Development}$$ $${\color{red}for}$$ $${\color{red}a}$$ $${\color{red}Startup}$$ $${\color{red}Business}$$
+</h2>
 <p align="center">
 <a href="https://sweetyoself.com">
   <img src="https://github.com/Giavonator/Sweet-Yo-Self/assets/68939873/8a9b326b-7448-4573-89c7-e2d4dcbdc752" width="250" height="250">
