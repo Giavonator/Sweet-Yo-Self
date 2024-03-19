@@ -1,6 +1,5 @@
-# Sweet Yo' Self
+<h1> **Sweet Yo' Self** </h1>
 <h2 align="center">
-# Sweet Yo' Self
 $${\color{pink}Web \space Development \space Project \space for \space a \space Startup \space Business}$$
 </h2>
 <p align="center">
