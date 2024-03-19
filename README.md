@@ -1,5 +1,5 @@
 # Sweet-Yo'-Self
-<p style=""font-size:2pt;color:pink;>Web Development Project for a Startup Business:</p>
+### **Web Development Project for a Startup Business:**
 $${\color{red}Red}$$
 <p align="center">
 <a href="https://sweetyoself.com">
