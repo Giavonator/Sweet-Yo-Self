@@ -1,6 +1,6 @@
 # Sweet Yo' Self
 <h2 align="center">
-$${\color{pink}Web&ensp;Development&ensp;Project&ensp;for&ensp;a&ensp;Startup&ensp;Business}$$
+$${\color{pink}Web \space Development&ensp;Project&ensp;for&ensp;a&ensp;Startup&ensp;Business}$$
 </h2>
 <p align="center">
 <a href="https://sweetyoself.com">
