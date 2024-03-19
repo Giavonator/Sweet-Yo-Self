@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight:bold;"> ୨⎯\spaceSweet Yo' Self\space⎯୧ </h1>
+<h1 align="center" style="font-weight:bold;"> ୨⎯&ensp;Sweet Yo' Self&ensp;⎯୧ </h1>
 <h2 align="center">
 $${\color{pink}Web \space Development \space Project \space for \space a \space Startup \space Business}$$
 </h2>
