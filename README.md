@@ -8,7 +8,7 @@
 
 
 <a style="position:relative; float:right;" href="https://sweetyoself.com">
-  <img src="https://github.com/Giavonator/Sweet-Yo-Self/assets/68939873/eda90db1-a1a0-4376-8127-a6e40fd587ce" width="450" height="250">
+  <img src="https://github.com/Giavonator/Sweet-Yo-Self/assets/68939873/eda90db1-a1a0-4376-8127-a6e40fd587ce" width="350" height="250">
 </a>
 </p>
   
