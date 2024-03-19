@@ -1,7 +1,9 @@
 # Sweet-Yo'-Self
 <h2 align="center">
-### **Web Development Project for a Startup Business:**
-$${\color{red}Web&nbsp;Development}$$ $${\color{red}Development}$$ $${\color{red}for}$$ $${\color{red}a}$$ $${\color{pink}Startup}$$ $${\color{red}Business}$$
+**Web Development Project for a Startup Business:**
+$${\color{prink}Web&nbsp;Development}$$ 
+$${\color{prink}Web()Development}$$
+$${\color{pink}Development}$$ $${\color{pink}for}$$ $${\color{pink}a}$$ $${\color{pink}Startup}$$ $${\color{pink}Business}$$
 </h2>
 <p align="center">
 <a href="https://sweetyoself.com">
