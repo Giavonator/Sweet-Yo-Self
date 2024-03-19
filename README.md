@@ -1,8 +1,8 @@
 # Sweet-Yo'-Self
 <h2 align="center">
 **Web Development Project for a Startup Business:**
-$${\color{prink}Web&nbsp;Development}$$ 
-$${\color{prink}Web()Development}$$
+$${\color{pink}Web&nbsp;Development}$$ 
+$${\color{pink}Web&ensp;Development}$$
 $${\color{pink}Development}$$ $${\color{pink}for}$$ $${\color{pink}a}$$ $${\color{pink}Startup}$$ $${\color{pink}Business}$$
 </h2>
 <p align="center">
