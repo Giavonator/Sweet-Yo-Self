@@ -82,7 +82,7 @@ function sendEmail(name, email, subject, message){
 
 	intro = "Someone left a message, their information is below!";
 	
-	html = "<html lang="en-US"><body style='border: 12px solid #FF69D2;border-radius:5px;background-color:#FFE1F6;'>  <br/> <p style='margin-top:0px;text-align:center;font-size: 25px;color: green;font-weight:900;'>Dear Phoenix,</p>  <p style='margin-left:5%;margin-right:5%;text-align:center;border-bottom: 3px dashed #FF69D2;'> " + intro + "<br/><br/><br/></p> <p style='padding-left:5%;font-size: 20px;color: green;'>Name: " + name + "<br/>Email: " + email + "<br/>Message: " + message + " <br/><br/></p><img style='margin-left:5%;margin-right:5%;width:90%;' src='https://sweetyoself.com/images/rainbowdrips.jpg'/></body></html>";
+	html = "<html lang='en-US'><body style='border: 12px solid #FF69D2;border-radius:5px;background-color:#FFE1F6;'>  <br/> <p style='margin-top:0px;text-align:center;font-size: 25px;color: green;font-weight:900;'>Dear Phoenix,</p>  <p style='margin-left:5%;margin-right:5%;text-align:center;border-bottom: 3px dashed #FF69D2;'> " + intro + "<br/><br/><br/></p> <p style='padding-left:5%;font-size: 20px;color: green;'>Name: " + name + "<br/>Email: " + email + "<br/>Message: " + message + " <br/><br/></p><img style='margin-left:5%;margin-right:5%;width:90%;' src='https://sweetyoself.com/images/rainbowdrips.jpg'/></body></html>";
 
 
 
