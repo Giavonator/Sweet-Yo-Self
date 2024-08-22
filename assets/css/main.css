@@ -2288,8 +2288,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		button.primary,
 		.button.primary {
-			background: #83d3c9;
-			border-color: #83d3c9;
+			background: #5fdbff;
+			border-color: #5fdbff;
 			color: #fff !important;
 		}
 
@@ -2474,7 +2474,7 @@ input, select, textarea {
 
 					#header nav ul li a {
 						border: solid 1px transparent;
-						color: inherit;
+						color: #FF61B3;
 						display: inline-block;
 						line-height: 1em;
 						padding: 1.9em 0.75em;
@@ -2691,6 +2691,7 @@ input, select, textarea {
 				#banner .inner header h2 {
 					border-bottom: solid 2px;
 					border-top: solid 2px;
+					border-color: #FF61B3;
 					font-size: 2.5em;
 					font-weight: 900;
 					letter-spacing: 0.2em;
