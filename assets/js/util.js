@@ -80,12 +80,7 @@ function orderChange(candyName, candyAmount){
 
 function sendEmail(name, email, subject, message){
 
-	intro = "Someone left a message, their information is below!";
-	
-	html = "<html lang='en-US'><body style='border: 12px solid #FF69D2;border-radius:5px;background-color:#FFE1F6;'>  <br/> <p style='margin-top:0px;text-align:center;font-size: 25px;color: green;font-weight:900;'>Dear Phoenix,</p>  <p style='margin-left:5%;margin-right:5%;text-align:center;border-bottom: 3px dashed #FF69D2;'> " + intro + "<br/><br/><br/></p> <p style='padding-left:5%;font-size: 20px;color: green;'>Name: " + name + "<br/>Email: " + email + "<br/>Message: " + message + " <br/><br/></p><img style='margin-left:5%;margin-right:5%;width:90%;' src='https://sweetyoself.com/images/rainbowdrips.jpg'/></body></html>";
-
-
-
+	html = "<html lang='en-US'><body> <p style='margin-top:0px;font-size: 15px;font-weight:900;'>Message From: " + name + " - " + email + "</p><br>" + message + " <br/></body></html>";
 	Email.send({
     	Host : "smtp.elasticemail.com",
     	Username : "gioalvez33@gmail.com",
@@ -93,14 +88,12 @@ function sendEmail(name, email, subject, message){
     	To : 'sweetyoselftoday@gmail.com',
     	From : "contact@sweetyoself.com",
     	Subject : subject,
-    	Body : html,
-		Attachments : [{
-			name : "candy.jpg",
-			path : "https://sweetyoself.com/images/candy.jpg"
-		}]
-	}).then(
-  	message => alert(message)
-);
+    	Body : html
+		// Attachments : [{
+		// 	name : "candy.jpg",
+		// 	path : "https://sweetyoself.com/images/candy.jpg"
+		// }]
+	}).then( message => results(message));
 }
 
 
@@ -111,7 +104,7 @@ function sendOrder(name, email, message, subtotal, taxes, total){
 
 	intro = "Someone ordered something, their information is below!";
 	
-	html = "<html lang="en-US"><body style='border: 12px solid #FF69D2;border-radius:5px;background-color:#FFE1F6;'>  <br/> <p style='margin-top:0px;text-align:center;font-size: 25px;color: green;font-weight:900;'>Dear Phoenix,</p>  <p style='margin-left:5%;margin-right:5%;text-align:center;border-bottom: 3px dashed #FF69D2;'> " + intro + "<br/><br/><br/></p> <p style='padding-left:5%;font-size: 20px;color: green;'>Name: " + name + "<br/>Email: " + email + "<br/>Phone Number: " + message + "<br/>Order Number: " + orderNumber +  "<br/><br/>Subtotal: " + subtotal + "<br/>Taxes: " + taxes +  "<br/>Total: " + total + " <br/><br/></p><img style='margin-left:5%;margin-right:5%;width:90%;' src='https://sweetyoself.com/images/rainbowdrips.jpg'/></body></html>";
+	html = "<html lang='en-US'><body style='border: 12px solid #FF69D2;border-radius:5px;background-color:#FFE1F6;'>  <br/> <p style='margin-top:0px;text-align:center;font-size: 25px;color: green;font-weight:900;'>Dear Phoenix,</p>  <p style='margin-left:5%;margin-right:5%;text-align:center;border-bottom: 3px dashed #FF69D2;'> " + intro + "<br/><br/><br/></p> <p style='padding-left:5%;font-size: 20px;color: green;'>Name: " + name + "<br/>Email: " + email + "<br/>Phone Number: " + message + "<br/>Order Number: " + orderNumber +  "<br/><br/>Subtotal: " + subtotal + "<br/>Taxes: " + taxes +  "<br/>Total: " + total + " <br/><br/></p><img style='margin-left:5%;margin-right:5%;width:90%;' src='https://sweetyoself.com/images/rainbowdrips.jpg'/></body></html>";
 
 
 	Email.send({
@@ -128,9 +121,9 @@ function sendOrder(name, email, message, subtotal, taxes, total){
 function results(message){
 
 	if(message == "OK"){
-		alert("Your order has been placed!");
+		alert("Your message has been sent!");
 	}
-	else alert("Something has gone wrong, please try again.");
+	else alert("Something has gone wrong, please try again." + message);
 }
 
 
