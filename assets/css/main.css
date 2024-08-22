@@ -233,8 +233,8 @@ input, select, textarea {
 	}
 
 	hr {
-		border-top: solid 1px rgba(124, 128, 129, 0.2);
-		border: 0;
+		border-top: solid 1px rgba(21, 32, 34, 0.2);
+		border: 10px;
 		margin-bottom: 1.5em;
 	}
 
