@@ -38,9 +38,6 @@
 
 		// Button.
 			$(
-				'<div id="navButton">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>' +
 				'<div id="navButton1">' +
 					'<a href="#navPanel" class="toggle"></a>' +
 				'</div>' 

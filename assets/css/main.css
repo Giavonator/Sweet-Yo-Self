@@ -166,7 +166,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #7c8081;
+		color: #252627;
 		font-family: 'Bellota', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -2427,20 +2427,50 @@ input, select, textarea {
 		cursor: default;
 		font-size: 0.7em;
 		left: 0;
-		padding: 1em 1.5em;
+		padding: 0em 0em 0em;
+		display: inline-block;
+		justify-content: space-between;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 10000;
 	}
 
+		#top-bar {
+			background: #5fdbff;
+			box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+			color: inherit;
+			cursor: default;
+			font-size: 0.7em;
+			text-align: center;
+			left: 0;
+			top: 0;
+			position: relative;
+			margin: 0;
+			width: 100%;
+			z-index: 10001;
+		}
+
+			#top-bar h2 {
+				padding: 0;
+				color: #fff;
+				margin: 0;
+				margin-bottom: 0.25em;
+				position: relative;
+			}
+
 		#logo{
+			position: relative;
+			margin-left: 1em;
+			margin-top: 0.75em;
+			float: left;
 			height: 5em;
 			width: 5em;
 		}
 
 
 		#header h1 {
+			position: relative;
 			font-weight: 900;
 			margin: 0;
 		}
@@ -2451,7 +2481,8 @@ input, select, textarea {
 
 		#header nav {
 			letter-spacing: 0.075em;
-			position: absolute;
+			position: relative;
+			float: right;
 			right: 1.5em;
 			text-transform: uppercase;
 			top: 0.75em;
@@ -2651,17 +2682,24 @@ input, select, textarea {
 	}
 
 	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-image: url("../../images/quarter.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 		color: #fff;
 		cursor: default;
-		padding: 6em 0;
+		padding: 6em 0 4em 0;
 		text-align: center;
 	}
+
+		#banner .button {
+			border-color: #5fdbff;
+			background-color: #5fdbff;
+		}
+
+		#banner .title {
+			font-size: 1em;
+		}
 
 		#banner .inner {
 			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -2672,7 +2710,7 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.5);
+			background: rgba(52, 27, 43, 1);
 			color: #fff;
 			display: inline-block;
 			opacity: 0;
@@ -2940,10 +2978,10 @@ input, select, textarea {
 				}
 
 		/* Banner */
-
+/* 
 			#banner {
 				background-size: 15em, 15em, auto, cover;
-			}
+			} */
 
 		/* Main */
 
@@ -3562,7 +3600,7 @@ input, select, textarea {
 				}
 
 		/* Banner */
-
+/* 
 			#banner {
 				background-size: 10em, 10em, auto, cover;
 				padding: 6em 0;
@@ -3584,7 +3622,7 @@ input, select, textarea {
 
 					#banner .inner br {
 						display: none;
-					}
+					} */
 
 		/* Main */
 
